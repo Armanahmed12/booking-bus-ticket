@@ -1,0 +1,31 @@
+/* common style */
+.btnStyle{
+
+     border: 2px solid #2af12ae3;
+     background-color: #00ff0031;
+     border-radius: 0.3rem;
+     color: #18c818;
+     font-weight: 500;
+}
+
+/* ========================== jQuary ====================== */
+
+/* nav */
+
+@media only screen and (max-width: 639px) {
+     
+    body{
+
+         padding : 0 !important;
+    } 
+    nav ul li {
+
+         width: 100%;
+         padding: 1rem 0;
+         text-align: center;
+   }
+   nav ul li:hover{
+
+       background-color: #f0cbcb;
+   }
+}
