@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booking Tickets</title>
     <!-- css and fontawesome icons -->
+      <!-- DaisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script
       src="https://kit.fontawesome.com/a59611a003.js"
       crossorigin="anonymous"
@@ -17,6 +19,7 @@
     />
     <!-- Tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
+   
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -103,7 +106,7 @@
     </section>
 
     <!-- Offer section -->
-    <section class="mb-20" id="offer-section">
+    <section class="mb-20 pt-12 sm:pt-0" id="offer-section">
       <h2 class="sm:text-4xl text-3xl font-bold text-center">
         Best offers for you
       </h2>
@@ -456,7 +459,7 @@
                   type="number"
                   name=""
                   placeholder="Enter your phone number"
-                  id=""
+                  id="numberField"
                 />
               </div>
               <div>
@@ -469,9 +472,10 @@
                 />
               </div>
               <button
+                onclick="my_modal_3.showModal()"
                 id="dataSubmitBtn"
-                style="display: disable"
-                class="btnStyle bg-[#1DD100] mt-4 text-white w-full py-2 border-none"
+                style="background-color: #1cd10044;cursor: not-allowed;"
+                class="btnStyle bg-[#1DD100] mt-4 text-white w-full py-2 border-none btn" disabled="true"
               >
                 Next
               </button>
@@ -486,6 +490,23 @@
         </div>
       </div>
     </section>
+
+<!-- You can open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box bg-white text-black text-center sm:my-6 my-3 font-semibold text-lg px-2 sm:px-4">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+      <div>
+          <img src="./images/success.png" class="mx-auto" alt="">
+           <p class="my-2">Thank you for Booking Our Bus Seats. 
+            We are working hard to find the best service and deals for you.</p>
+            <p class="font-thin sm:mb-6">Shortly you will find a confirmation in your email.</p>
+            <button class='bg-green-600 px-8 sm:py-3 py-1 rounded-xl text-white'>Continue</button>
+      </div>
+  </div>
+</dialog>
 
     <footer
       class="bg-black sm:py-3 py-10 sm:h-[350px] h-auto sm:p-6 p-3 flex flex-col justify-center items-center text-white"
@@ -529,11 +550,13 @@
     </footer>
 
     <!-- js -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/nav.js"></script>
     <script type="module" src="./js/bookingTicket.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/toastify-js"
     ></script>
+    
   </body>
 </html>

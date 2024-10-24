@@ -1,6 +1,5 @@
 const allTicketsTag = document.querySelectorAll("#allSeatContainer p");
 const existedTicketsNumTag = document.getElementById("existedSeatsTag");
-console.log(existedTicketsNumTag.innerText);
 const selectedSeatsTag = document.getElementById("selectedSeatNumTag");
 const ticketsContainer = document.getElementById("ticketsContainer");
 const totalPriceTag = document.getElementById("totalPriceTag");
@@ -130,3 +129,19 @@ document.getElementById("couponBtn").addEventListener("click", () => {
     showToastMsg("Coupon is Invalid!");
   }
 });
+
+
+// Enable the "Next" button from "disabled"
+const numbers = [];
+document.getElementById('numberField').addEventListener('input',(e)=>{
+  
+      numbers.push(e.data);
+      
+      const numberField = document.getElementById('numberField').value;
+      console.log(numberField);
+       if(selectedSeats.length && (numberField.length >= 11)){
+          
+           document.getElementById('dataSubmitBtn').removeAttribute('style');
+           document.getElementById('dataSubmitBtn').removeAttribute('disabled');
+       }
+})
