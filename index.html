@@ -144,10 +144,10 @@
     <!-- transportation Section -->
     <section
       id="transportationSection"
-      class="bg-red-300 py-10 rounded-t-[1rem] sm:rounded-t-[3rem] text-center sm:px-8 mt-5"
+      class="bg-gray-100 py-10 rounded-t-[1rem] sm:rounded-t-[3rem] text-center sm:px-8 mt-5"
     >
       <h2 class="text-3xl font-bold">P.H Paribahan</h2>
-      <p class="my-2">
+      <p class="my-2 px-2 text-sm">
         Yes, you can run unit tests and view the results directly within the
         app. The integrated <br />
         testing features allow for a streamlined .
@@ -224,10 +224,10 @@
 
         <!-- Booking Seat (part) -->
         <div
-          class="flex flex-col gap-3 sm:flex-row bg-white px-4 mx-3 rounded-lg font-semibold mt-10 py-4 text-left">
+          class="flex flex-col gap-3 sm:flex-row bg-white px-4 sm:mx-3 rounded-lg font-semibold mt-10 py-4 text-left sm:mx-0 mx-3">
 
              <!-- first part -->
-          <div class="w-[60%]  border-r-2 border-dashed border-gray-400 pr-4">
+          <div class="sm:w-[60%] sm:border-r-2 border-dashed border-gray-400 sm:pr-4">
             <h2 class="text-lg border-b-[2px] border-dashed border-gray-300 pb-4">
               Select Your Seat
             </h2>
@@ -241,15 +241,119 @@
                  <h2>Selected</h2>
                </div>
             </div>
-            <img class="h-[50px] ml-auto px-4 py-1 rounded-lg bg-gray-200" src="./images/x.png" alt="">
+            <img class="h-[50px] ml-auto px-4 py-1 rounded-lg bg-gray-300 mb-3" src="./images/x.png" alt="">
+
+            <!-- All seats container -->
+              <div id="allSeatContainer">
+                <!-- A -->
+                 <div>
+                   <h2>A</h2>
+                    <div>
+                       <p>A1</p>
+                       <p>A2</p>
+                       <p>A3</p>
+                       <p>A4</p>
+                    </div>
+                 </div>
+                <!-- B -->
+                 <div>
+                   <h2>B</h2>
+                    <div>
+                       <p>B1</p>
+                       <p>B2</p>
+                       <p>B3</p>
+                       <p>B4</p>
+                    </div>
+                 </div>
+                <!-- C -->
+                 <div>
+                   <h2>C</h2>
+                    <div>
+                       <p>C1</p>
+                       <p>C2</p>
+                       <p>C3</p>
+                       <p>C4</p>
+                    </div>
+                 </div>
+                <!-- D -->
+                 <div>
+                   <h2>D</h2>
+                    <div>
+                       <p>D1</p>
+                       <p>D2</p>
+                       <p>D3</p>
+                       <p>D4</p>
+                    </div>
+                 </div>
+                <!-- E -->
+                 <div>
+                   <h2>E</h2>
+                    <div>
+                       <p>E1</p>
+                       <p>E2</p>
+                       <p>E3</p>
+                       <p>E4</p>
+                    </div>
+                 </div>
+                <!-- F -->
+                 <div>
+                   <h2>F</h2>
+                    <div>
+                       <p>F1</p>
+                       <p>F2</p>
+                       <p>F3</p>
+                       <p>F4</p>
+                    </div>
+                 </div>
+                <!-- G -->
+                 <div>
+                   <h2>G</h2>
+                    <div>
+                       <p>G1</p>
+                       <p>G2</p>
+                       <p>G3</p>
+                       <p>G4</p>
+                    </div>
+                 </div>
+                <!-- H -->
+                 <div>
+                   <h2>H</h2>
+                    <div>
+                       <p>H1</p>
+                       <p>H2</p>
+                       <p>H3</p>
+                       <p>H4</p>
+                    </div>
+                 </div>
+                <!-- I -->
+                 <div>
+                   <h2>I</h2>
+                    <div>
+                       <p>I1</p>
+                       <p>I2</p>
+                       <p>I3</p>
+                       <p>I4</p>
+                    </div>
+                 </div>
+                  <!-- J -->
+                  <div>
+                    <h2>J</h2>
+                     <div>
+                        <p>J1</p>
+                        <p>J2</p>
+                        <p>J3</p>
+                        <p>J4</p>
+                     </div>
+                  </div>
+              </div>
           </div>
            <!-- Second part -->
-           <div class="w-[40%]">
+           <div class="sm:w-[40%] sm:ml-2">
             <h2 class="text-lg border-b-[2px] border-dashed border-gray-300 pb-4">
               Select Your Seat
             </h2>
             <!-- About Seat -->
-            <div class="bg-gray-100 p-2 rounded-lg my-4">
+            <div class="bg-gray-100 p-3 rounded-lg my-6">
                <div class="flex items-center justify-between text-lg border-b-[2px] border-dashed border-gray-400 py-4">
                  <p>Seat <span class="bg-[#1DD100] text-white px-2 rounded-md">2</span> </p> <p>class</p> <p>Price</p>
                </div>
@@ -260,17 +364,17 @@
                  <p>C2</p> <p>Economoy</p> <p>550</p>
                </div>
                <!-- Total Price -->
-                <div class="flex items-center justify-between text-lg my-2">
+                <div class="flex items-center justify-between text-lg my-4">
                    <h2>Total Price</h2>
                    <p>BDT 000</p>
                 </div>
                 <!-- Coupon text Field -->
                  <div style="border: 2px solid #3d363644;" class="bg-white p-2 rounded-lg flex justify-between items-center">
-                     <input type="text" name="" class="text-gray-400 outline-none" placeholder="Have any copupon?" id="">
+                     <input type="text" name="" class="text-gray-400 outline-none w-full" placeholder="Have any copupon?" id="">
                      <input class="bg-[#1DD100] text-white p-2 rounded-lg px-4" type="button" value="Apply">
                  </div>
                  <!-- grand total -->
-                 <div class="flex items-center justify-between text-lg my-2">
+                 <div class="flex items-center justify-between text-lg my-4">
                   <h2>Grand Total</h2>
                   <p>BDT 000</p>
                </div>

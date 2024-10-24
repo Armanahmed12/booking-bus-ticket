@@ -67,11 +67,6 @@
       
 }
 
-/* #passengerFormContainer{
-
-   border: 2px solid red;
-} */
-
 #passengerFormContainer h2{
 
     margin-bottom: 0.5rem;
@@ -82,12 +77,54 @@
 
      border: 2px solid rgba(128, 128, 128, 0.601);
      border-radius: 0.4rem;
-     padding: 0.5rem 1rem;
+     padding: 0.7rem 1rem;
      width: 100%;
-     margin-bottom: 0.6rem;
+     margin-bottom: 0.8rem;
     
 } 
 
+/* Css for Seats div */
+
+#allSeatContainer > div {
+
+   
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#allSeatContainer > div > div {
+
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 1rem;
+      
+     
+      
+}
+
+#allSeatContainer > div > div p:nth-child(3){
+
+    margin-left: auto;
+}
+
+#allSeatContainer h2{
+
+      width: 20px;
+      color: rgb(128, 0, 255);
+      font-weight: bold;
+      font-size: 1.2rem;
+}
+
+#allSeatContainer p{
+
+      background-color: #8080802a;
+      padding: 1rem 2.5rem;
+      border-radius: 0.4rem;
+      width: 105px;
+}
 
 
 /* ========================== jQuary ====================== */
@@ -124,4 +161,14 @@
 
      background-color: #ff770022;
    }
+   /* Ticket section styles */
+   #allSeatContainer p{
+   
+    padding: 0.5rem;
+    width: 40px;
+   }
+   #allSeatContainer h2{
+
+    width: 15px;
+}
 }
