@@ -25,7 +25,7 @@ menuBar.addEventListener("click", () => {
         menuBar.setAttribute('class', 'text-2xl fa-solid fa-bars block sm:hidden')
         setTimeout( ()=>{
           document.getElementById('bannerSection').style.zIndex = '20';
-        },1000);
+        }, 500);
     
       }
     }
